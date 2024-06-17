@@ -8,7 +8,7 @@ public class LibraryService {
     private List<Book> books;
 
     public LibraryService() {
-        books = new ArrayList<Book>();
+        books = LibraryStorage.getBooksFromFile();
     }
 
     public void addBook(String title, String author, int numberOfPages) {
@@ -32,5 +32,9 @@ public class LibraryService {
             }
         }
         return readBooks;
+    }
+
+    public List<Book> getBooks() {
+        return books;
     }
 }

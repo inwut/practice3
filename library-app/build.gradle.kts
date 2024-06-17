@@ -1,0 +1,21 @@
+plugins {
+    id("java")
+}
+
+group = "org.ukma"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(platform("org.junit:junit-bom:5.10.0"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    implementation(project(":library-service"))
+    implementation(project(":library-models"))
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
