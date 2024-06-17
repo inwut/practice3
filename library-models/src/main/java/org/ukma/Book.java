@@ -1,12 +1,10 @@
 package org.ukma;
 
-import lombok.Getter;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 @Getter
 @ToString
+@EqualsAndHashCode
 @RequiredArgsConstructor
 public class Book {
     @NonNull
