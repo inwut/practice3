@@ -14,6 +14,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     implementation(project(":library-service"))
     implementation(project(":library-models"))
+    implementation(project(":library-storage"))
 }
 
 tasks.test {

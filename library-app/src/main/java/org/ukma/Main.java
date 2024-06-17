@@ -20,5 +20,7 @@ public class Main {
         for (Book book : readBooks) {
             System.out.println(book);
         }
+
+        LibraryStorage.saveBooksToFile(libraryService.getBooks());
     }
 }
